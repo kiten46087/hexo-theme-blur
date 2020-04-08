@@ -1,5 +1,6 @@
 body {
   font-family: 'Comic Neue', cursive;
+  background-color: #eff0f6;
 }
 
 .hr-divide {
@@ -41,11 +42,12 @@ body {
 
 .excerpt-date {
   font-size: 15px;
-  color: #d6dbd5;
+  color: #c2beb8;
 }
 
 .main-page {
   margin-top: 20px;
+  padding-right: 0px;
 }
 
 .main-page-right {
@@ -78,7 +80,7 @@ body {
   width: 285px;
   height: 680px;
   background-size: cover;
-  box-shadow: 0 0 8px 8px white inset;
+  box-shadow: 0 0 8px 8px #f2f2f2 inset;
 }
 
 
@@ -151,6 +153,16 @@ li a:hover {
 
 
 /* the styles of header */
+
+.nav {
+  margin-top: 0px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: #ff9966;
+}
+
 .header-title {
   font-size: 40px;
   color: bisque;
@@ -164,6 +176,14 @@ li a:hover {
   filter: blur(2px);
 }
 
+.header-category {
+  font-size: 15px;
+  /* position: absolute; */
+  align-items: right;
+  /* text-align: right;
+  float: right; */
+  /* align-items: flex-end; */
+}
 
 .banner {
   background-image: url("../css/banner.png");
@@ -173,5 +193,29 @@ li a:hover {
   height: 150px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 8px 8px white inset;
+  box-shadow: 0 0 8px 8px #f2f2f2 inset;
+  /* position: relative; */
+}
+
+
+/* The styles of the footer */
+.footer {
+  font-size: 15px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  color: #ff9966;
+}
+
+.footer a {
+  color: #ff9966;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ff9966;
+  text-decoration: none;
+  filter: blur(1.8px);
 }
