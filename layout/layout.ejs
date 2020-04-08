@@ -1,0 +1,29 @@
+<html>
+  <%- partial('_partial/head.ejs') %>
+
+  <body>
+    <!-- Header -->
+    <%- partial('_partial/header.ejs') %>
+
+    <div class="container main-page">
+      <div class="row">
+        <!-- SideBar -->
+        <div class="col-sm-3 main-page-left">
+          <%- partial('_partial/sidebar') %> 
+        </div>
+
+        <!-- Main content -->
+        <div class="col-sm-8 main-page-right">
+          <%- body %> 
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <%- partial('_partial/footer.ejs') %> 
+
+    <!-- After footer file to store js of Bootstrap -->
+    <%- partial('_partial/after-footer.ejs') %> 
+  </body>
+
+</html>

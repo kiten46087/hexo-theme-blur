@@ -1,0 +1,177 @@
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+.hr-divide {
+  border: 0.7px solid #ff9966;
+  filter: blur(2px);
+}
+
+.hr-divide-header {
+  border: 0.7px solid #ff9966;
+  filter: blur(2px);
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-post-title a {
+  color: #ff9966;
+  font-size: 29px;
+  text-decoration: none;
+}
+
+.blog-post-title a:hover {
+  text-shadow: 0 0 3px #ff9966;
+  color: transparent;
+}
+
+.blog-post-title {
+  margin-bottom: 0px;
+}
+
+.blog-post {
+  padding-left: 0px;
+}
+
+.blog-excerpt {
+  margin-top: 7px;
+  font-family: Georgia, serif;
+}
+
+.excerpt-date {
+  font-size: 15px;
+  color: #d6dbd5;
+}
+
+.main-page {
+  margin-top: 20px;
+}
+
+.main-page-right {
+  margin-left: 60px;
+}
+
+.thumbnail {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.main-page-right .img-thumbnail {
+  padding: 0px;
+  width: 300px;
+}
+
+.main-page-right .img-thumbnail:hover {
+  filter: blur(3px);  
+}
+
+.hr-divide {
+  margin: 6px auto;
+}
+
+
+
+.main-page-left {
+  background-image: url("https://images.unsplash.com/photo-1534267287555-c5ff26e73a91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=736&q=80");
+  width: 285px;
+  height: 680px;
+  background-size: cover;
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+
+/* The styles of the sidebar titles */
+.sidebar-container {
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+}
+
+.sidebar-container .img-thumbnail {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  padding: 0px;
+}
+
+.sidebar-buttons {
+  padding-left: 0px;
+}
+
+.sidebar-title {
+  color: #ff9966;
+  font-size: 27px;
+  text-align: center;
+}
+
+.sidebar-title:hover {
+  filter: blur(2px);
+}
+
+.sidebar-hr {
+  border: 0.7px solid #ff9966;
+  margin-bottom: 4px;
+  filter: blur(1px);
+}
+
+
+/* The styles of the button inside sidebars */
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+
+li a {
+  color: #ff9966;
+  font-size: 18px;
+}
+
+li a:hover {
+  text-shadow: 0 0 2.7px #ff9966;
+  color: transparent;
+  text-decoration: none;
+}
+
+
+/* the styles of header */
+.header-title {
+  font-size: 40px;
+  color: bisque;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.header-title:hover {
+  color: bisque;
+  text-decoration: none;
+  filter: blur(2px);
+}
+
+
+.banner {
+  background-image: url("../css/banner.png");
+  display: flex;
+  background-size: cover;
+  width: 1300px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 8px 8px white inset;
+}

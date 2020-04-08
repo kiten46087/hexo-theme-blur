@@ -1,0 +1,7 @@
+<!-- <img src="css/test.jpg" alt="main-page-cover-image" class="img-fluid"> -->
+<!-- <hr class="hr-divide"> -->
+
+<% page.posts.each(function(item) { %>
+  <%- partial('_partial/article-excerpt.ejs', {item: item}) %> 
+  <hr class="hr-divide">
+<% }); %>

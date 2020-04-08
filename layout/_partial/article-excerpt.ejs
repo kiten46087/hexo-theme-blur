@@ -1,0 +1,31 @@
+<div class="blog-post row">
+  <div class="col-sm-9 blog-excerpt">
+    <!-- Title -->
+    <h2 class="blog-post-title">
+      <a href="<%- config.root %><%- item.path %>">
+        <%- item.title %>
+      </a>
+    </h2>
+
+    <!-- Date -->
+    <div class="excerpt-date">
+      <%- date(item.date, 'YYYY/M/D') %> 
+    </div>
+    
+
+    <!-- Excerpt -->
+    <div class="excerpt">
+      <%- item.excerpt  %>
+    </div>
+    
+   
+  </div>
+
+  <div class="col-sm-3 thumbnail">
+    <% if (item.thumbnail_image_url) { %>     
+      <img src="<%= item.thumbnail_image_url %> " alt="cover image" class="img-thumbnail">
+    <% } else { %> 
+      <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" class="img-thumbnail">
+    <% } %> 
+  </div>
+</div>
