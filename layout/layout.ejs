@@ -2,15 +2,13 @@
   <%- partial('_partial/head.ejs') %>
 
   <body>
-    <!-- Header -->
-    <%- partial('_partial/header.ejs') %>
-
-    <div class="container main-page">
+    <div class="container">
+      <!-- Header -->
+      <%- partial('_partial/header.ejs') %>
       <%- body %> 
+      <!-- Footer -->
+      <%- partial('_partial/footer.ejs') %> 
     </div>
-
-    <!-- Footer -->
-    <%- partial('_partial/footer.ejs') %> 
 
     <!-- After footer file to store js of Bootstrap -->
     <%- partial('_partial/after-footer.ejs') %> 

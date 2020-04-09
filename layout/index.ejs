@@ -1,16 +1,8 @@
 <!-- <img src="css/test.jpg" alt="main-page-cover-image" class="img-fluid"> -->
 <!-- <hr class="hr-divide"> -->
-<div class="row">
-    <!-- SideBar -->
-    <div class="col-md-3 main-page-left">
-      <%- partial('_partial/sidebar') %> 
-    </div>
-
-    <!-- Main content -->
-    <div class="col-md-8 main-page-right">
-      <% page.posts.each(function(item) { %>
-        <%- partial('_partial/article-excerpt.ejs', {item: item}) %> 
-        <hr class="hr-divide">
-      <% }); %>      
-    </div>
-  </div>
+<div id="main-page">
+  <% page.posts.each(function(item) { %>
+    <%- partial('_partial/article-excerpt.ejs', {item: item}) %> 
+    <!-- <hr class="hr-divide"> -->
+  <% }); %>      
+</div>
