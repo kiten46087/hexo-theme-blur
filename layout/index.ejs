@@ -4,5 +4,7 @@
   <% page.posts.each(function(item) { %>
     <%- partial('_partial/article-excerpt.ejs', {item: item}) %> 
     <!-- <hr class="hr-divide"> -->
-  <% }); %>      
+  <% }); %>  
+  
+  <%- partial('_partial/pagination') %>
 </div>

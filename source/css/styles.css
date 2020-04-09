@@ -3,18 +3,6 @@ body {
   background-color: white;
 }
 
-.hr-divide {
-  border: 0.7px solid #ff9966;
-  filter: blur(2px);
-}
-
-.hr-divide-header {
-  border: 0.7px solid #ff9966;
-  filter: blur(2px);
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .blog-post-title a {
   color: #ff9966;
@@ -83,11 +71,6 @@ body {
   filter: blur(2px);
 }
 
-.sidebar-hr {
-  border: 0.7px solid #ff9966;
-  margin-bottom: 4px;
-  filter: blur(1px);
-}
 
 
 /* The styles of the button inside sidebars */
@@ -190,12 +173,25 @@ li a:hover {
 
 
 /* The styles of the blog excerpt */
+.date {
+  color: #c2beb8;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: right;
+}
+
 .blog-excerpt {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* padding: 80px 100px;
   margin: 40px 0; */
+}
+
+.excerpt {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .blog-excerpt .excerpt-wrapper {
@@ -255,6 +251,54 @@ li a:hover {
 }
 
 
+/* The styles of the post page */
+.article {
+  margin: 64px 0 80px;
+  padding: 80px 100px 0;
+  background-color: #f2ebda;
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.article > .article-title {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.article > .article-date {
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.article > .article-content {
+  padding-bottom: 60px;
+}
+
+.article > .hr-divide {
+  margin-top: 30px;
+}
+
+.article-content > .hr-divide {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.article-content > .article-footer > a {
+  margin-top: 13px;
+  color: #ff9966;
+  font-size: 20px;
+  transition: all .4s ease-in-out;
+}
+
+.article-content > .article-footer > a:hover {
+  text-decoration: none;
+  filter: blur(1.5px);
+  transform: scale(1.2);
+}
+
 /* The styles of the footer */
 .footer {
   font-size: 15px;
@@ -276,3 +320,48 @@ li a:hover {
   text-decoration: none;
   filter: blur(1.8px);
 }
+
+/* The styles of the pagination */
+.pager {
+  margin-left: 10px;
+  background-color: #eff0f6;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-right: 20px; 
+  justify-content: space-between;
+}
+
+.pager li a {
+  font-size: 25px;
+}
+
+/* The styles of the Archives */
+.archive {
+  padding: 80px 160px;
+  background-color: #f2ebda;
+  margin: 64px 0 80px;
+}
+
+.archive-item {
+  margin-top: 10px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+.archive-item a {
+  color: #ff9966;
+}
+
+.archive-item a:hover {
+  color: #ff9966;
+  text-decoration: none;
+  filter: blur(1.5px);
+}
+
+.archive-item span {
+  opacity: 0.5;
+}
+
+

@@ -1,8 +1,15 @@
 <div class="blog-excerpt">
   <% if (item.position == 1) { %> 
     <div class="excerpt-wrapper">
-      <a class="title" href=""><%- item.title %></a>
-      <section><%- item.excerpt %></section>
+      <a class="title" href="<%- config.root %><%- item.path %>">
+        <%- item.title %>
+      </a>
+
+      <section class="excerpt"><%- item.excerpt %></section>
+
+      <div class="date">
+        <%- date(item.date, 'YYYY/M/D') %>
+      </div>
     </div>
     <div class="image-wrapper">
       <% if (item.image_url) { %> 
@@ -20,8 +27,13 @@
       <% } %> 
     </div>
     <div class="excerpt-wrapper">
-      <a class="title" href=""><%- item.title %></a>
-      <section><%- item.excerpt %></section>
+      <a class="title" href="<%- config.root %><%- item.path %>">
+        <%- item.title %>
+      </a>
+      <section class="excerpt"><%- item.excerpt %></section>
+      <div class="date">
+        <%- date(item.date, 'YYYY/M/D') %>
+      </div>
     </div>
   <% } %> 
 </div>
