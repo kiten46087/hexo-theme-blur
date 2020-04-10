@@ -144,6 +144,20 @@ li a:hover {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  nav > .nav-wrapper {
+    flex-direction: column;
+  }
+  nav > .nav-wrapper > .menu {
+    text-align: left;
+  }
+
+  nav > .nav-wrapper > .icons {
+    /* text-align: left; */
+    margin-top: 25px;
+  }
+}
+
 #nav > .nav-wrapper > .menu {
   text-align: right;
   font-family: 'Courier New', Courier, monospace;
@@ -187,6 +201,13 @@ li a:hover {
   align-items: center;
   /* padding: 80px 100px;
   margin: 40px 0; */
+}
+
+/* optimized for mobile device */
+@media screen and (max-width: 600px) {
+  .blog-excerpt {
+    flex-direction: column;
+  } 
 }
 
 .excerpt {
