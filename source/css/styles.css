@@ -365,3 +365,22 @@ li a:hover {
 }
 
 
+/* The styles of about page */
+.about {
+  padding: 80px 160px;
+  background-color: #f2ebda;
+  margin: 64px 0 80px;
+}
+
+
+.highlight {
+  background-color: white;
+}
+
+.highlight .gutter {
+  display: none;
+}
+
+.highlight .line {
+  margin-left: 5px;
+}
